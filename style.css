@@ -1,0 +1,11 @@
+.phone-wrapper {
+  width: 414px;
+  margin: 5% auto 0; /* Top is 5% - left and right are automatically adjusting to center */
+  height: 736px;
+  background-color: white;
+}
+
+
+body {
+  background-color: black;
+}
