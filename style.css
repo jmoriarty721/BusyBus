@@ -62,44 +62,23 @@ body {
   background-color: #00C6E1;
 }
 
-.headline {       /* Washington and State*/
-  display: flex;
-  flex-direction: row;
-  padding-top: 25px;
-  font-style: normal;
-  font-family: "Arial narrow";
-  font-size: 12pt;
-  color: #ffffff;
-  position:absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.chevron::before {    /*chevron*/
+	border-style: solid;
+	border-width: 0.25em 0.25em 0 0;
+	content: '';
+	height: 0.45em;
+	left: 0.15em;
+	top: 0.15em;
+	transform: rotate(-45deg);
+	width: 0.45em;
 }
 
-  .chevron::before {    /*chevron*/
-  	border-style: solid;
-  	border-width: 0.25em 0.25em 0 0;
-  	content: '';
-  	height: 0.45em;
-  	left: 0.15em;
-  	top: 0.15em;
-  	transform: rotate(-45deg);
-  	width: 0.45em;
-}
 .chevron.left:before {
   display: block;
 	position: relative;
   left: 0.25em;
 	transform: rotate(-135deg);
   color: #ffffff;
-}
-.chevron.right:before {
-	transform: rotate(45deg);
-  color: #979797;
-  display:block;
-  
-
-
 }
 
 .search {            /*Search*/
@@ -114,12 +93,45 @@ body {
   color: #ffffff;
 }
 
+.headline {       /* Washington and State*/
+  display: flex;
+  flex-direction: row;
+  padding-top: 25px;
+  font-style: normal;
+  font-family: "Arial narrow";
+  font-size: 12pt;
+  color: #ffffff;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.map{               /* map */
+  width: 100%;
+}
+
+
+ul {                 /* bus list container*/
+  position: relative;
+  align-items: center;
+  padding-top: .625em;
+  padding-left: .625em;
+  padding-bottom: .625em;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding:1%;
+}
+
 
 .busNum {             /* oval # */
   position:relative;
-  margin:5px;
   height: 35px;
-  width: 52px;
+  width: 20%;
   background-color: #979797;
   border-radius: 50%;
   justify-content: center;
@@ -128,46 +140,37 @@ body {
   color: #ffffff;
 }
 
-ul {            /* bus list container*/
-  position: relative;
-  align-items: center;
-  padding-left: 10px;
-  padding-top:10px;
-  padding-bottom: 10px;
+.busName {           /* Streets */
+  color: #979797;
+  font-family: "Helvetica Neue";
+  padding-left:4%;
+  font-size: 16px;
+  width:40%;
 }
 
-ul li {
-  display: flex;
-  align-items: center;
+.time{              /* Arrival time */
+  display: inline-flex;
+  color: #979797;
+  font-family: "Helvetica Neue";
+  font-size: 12px;
+  width:35%;
+  justify-content: flex-end;
 }
 
-ul li span{
-font-family: "Helvetica Neue";
-color: #979797;
+.chevron.right:before {        /* grey chevron */
+	transform: rotate(45deg);
+  color: #979797;
+  display:flex;
 }
-
+.right {
+  width: 5%;
+  margin-left: .25em;
+  }
 
 .border {      /* border line */
-  margin-left: 20%;
+  margin-left: 23%;
   border-bottom: 1px solid #979797;
-}
-
-ul li span:nth-child(2) {
-  padding-left: 18px
-}
-
-ul li span:nth-child(3) {
-
-}
-
-ul li span:nth-child(4) {
-
-}
-
-.map{
-  width: 100%;
-
-}
+  }
 
 .botbar{            /*bot grey bar*/
   position:relative;
