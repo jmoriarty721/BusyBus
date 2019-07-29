@@ -47,13 +47,14 @@ table {
 .phone-wrapper {      /*overall frame*/
   width: 375px;
   margin: 5% auto 0; /* Top is 5% - left and right are automatically adjusting to center */
-  height: 802px;
+  height: 900px;
   background-color: white;
 }
 
 body {
   background-color: black;
 }
+
 
 .topbar{            /*blue bar*/
   position:relative;
@@ -74,32 +75,27 @@ body {
 }
 
 .chevron.left:before {
-  display: block;
-	position: relative;
-  left: 0.25em;
+	position: absolute;
+  margin-top: 2.25em;
+  margin-left: .625em;
 	transform: rotate(-135deg);
   color: #ffffff;
 }
 
 .search {            /*Search*/
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  text-align: left;
-  padding-top: 25px;
-  padding-left: 27px;
+  position: absolute;
+  padding-top: .7em;
+  padding-left: 1.5em;
   font-size: 14pt;
   font-family: "arial narrow";
   color: #ffffff;
 }
 
 .headline {       /* Washington and State*/
-  display: flex;
-  flex-direction: row;
-  padding-top: 25px;
+  padding-top: 1.4em;
   font-style: normal;
   font-family: "Arial narrow";
-  font-size: 12pt;
+  font-size: 14pt;
   color: #ffffff;
   position:absolute;
   top: 50%;
@@ -130,7 +126,7 @@ ul li {
 
 .busNum {             /* oval # */
   position:relative;
-  height: 35px;
+  height: 2.18em;
   width: 20%;
   background-color: #979797;
   border-radius: 50%;
@@ -138,23 +134,29 @@ ul li {
   align-items: center;
   display: flex;
   color: #ffffff;
+  font-size: 16pt;
 }
 
 .busName {           /* Streets */
   color: #979797;
   font-family: "Helvetica Neue";
+  font-style: normal;
   padding-left:4%;
-  font-size: 16px;
+  font-size: 12pt;
   width:40%;
+  text-overflow: ellipsis;
+  overflow:scroll;
 }
 
 .time{              /* Arrival time */
   display: inline-flex;
   color: #979797;
   font-family: "Helvetica Neue";
-  font-size: 12px;
-  width:35%;
+  font-size: 10pt;
+  width:40%;
   justify-content: flex-end;
+  text-overflow: ellipsis;
+  overflow: scroll;
 }
 
 .chevron.right:before {        /* grey chevron */
@@ -164,7 +166,6 @@ ul li {
 }
 .right {
   width: 5%;
-  margin-left: .25em;
   }
 
 .border {      /* border line */
