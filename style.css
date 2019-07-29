@@ -1,11 +1,178 @@
-.phone-wrapper {
-  width: 414px;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*reset end */
+
+.phone-wrapper {      /*overall frame*/
+  width: 375px;
   margin: 5% auto 0; /* Top is 5% - left and right are automatically adjusting to center */
-  height: 736px;
+  height: 802px;
   background-color: white;
 }
 
-
 body {
   background-color: black;
+}
+
+.topbar{            /*blue bar*/
+  position:relative;
+  height: 64px;
+  width: 100%;
+  background-color: #00C6E1;
+}
+
+.headline {       /* Washington and State*/
+  display: flex;
+  flex-direction: row;
+  padding-top: 25px;
+  font-style: normal;
+  font-family: "Arial narrow";
+  font-size: 12pt;
+  color: #ffffff;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+  .chevron::before {    /*chevron*/
+  	border-style: solid;
+  	border-width: 0.25em 0.25em 0 0;
+  	content: '';
+  	height: 0.45em;
+  	left: 0.15em;
+  	top: 0.15em;
+  	transform: rotate(-45deg);
+  	width: 0.45em;
+}
+.chevron.left:before {
+  display: block;
+	position: relative;
+  left: 0.25em;
+	transform: rotate(-135deg);
+  color: #ffffff;
+}
+.chevron.right:before {
+	transform: rotate(45deg);
+  color: #979797;
+  display:block;
+  
+
+
+}
+
+.search {            /*Search*/
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  text-align: left;
+  padding-top: 25px;
+  padding-left: 27px;
+  font-size: 14pt;
+  font-family: "arial narrow";
+  color: #ffffff;
+}
+
+
+.busNum {             /* oval # */
+  position:relative;
+  margin:5px;
+  height: 35px;
+  width: 52px;
+  background-color: #979797;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #ffffff;
+}
+
+ul {            /* bus list container*/
+  position: relative;
+  align-items: center;
+  padding-left: 10px;
+  padding-top:10px;
+  padding-bottom: 10px;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+}
+
+ul li span{
+font-family: "Helvetica Neue";
+color: #979797;
+}
+
+
+.border {      /* border line */
+  margin-left: 20%;
+  border-bottom: 1px solid #979797;
+}
+
+ul li span:nth-child(2) {
+  padding-left: 18px
+}
+
+ul li span:nth-child(3) {
+
+}
+
+ul li span:nth-child(4) {
+
+}
+
+.map{
+  width: 100%;
+
+}
+
+.botbar{            /*bot grey bar*/
+  position:relative;
+  background-color: white;
+  height: 64px;
+  width: 100%;
+  border-top: 2px solid #979797;
 }
