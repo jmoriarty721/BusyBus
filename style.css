@@ -76,7 +76,7 @@ body {
 
 .chevron.left:before {
 	position: absolute;
-  margin-top: 2.25em;
+  margin-top: 2.2em;
   margin-left: .625em;
 	transform: rotate(-135deg);
   color: #ffffff;
@@ -84,9 +84,9 @@ body {
 
 .search {            /*Search*/
   position: absolute;
-  padding-top: .7em;
-  padding-left: 1.5em;
-  font-size: 14pt;
+  padding-top: .85em;
+  padding-left: 2em;
+  font-size: 14px;
   font-family: "arial narrow";
   color: #ffffff;
 }
@@ -95,7 +95,7 @@ body {
   padding-top: 1.4em;
   font-style: normal;
   font-family: "Arial narrow";
-  font-size: 14pt;
+  font-size: 14px;
   color: #ffffff;
   position:absolute;
   top: 50%;
@@ -127,32 +127,49 @@ ul li {
 .busNum {             /* oval # */
   position:relative;
   height: 2.18em;
-  width: 20%;
+  width: 17%;
   background-color: #979797;
   border-radius: 50%;
   justify-content: center;
   align-items: center;
   display: flex;
   color: #ffffff;
-  font-size: 16pt;
+  font-size: 17px;
+}
+
+.div {								/* div for busname and route */
+	padding-left: 4%;
+	width:50%;
+	align-items: center;
+	box-sizing: border-box;
 }
 
 .busName {           /* Streets */
-  color: #979797;
+	display: flex;
+	color: #979797;
   font-family: "Helvetica Neue";
   font-style: normal;
   padding-left:4%;
-  font-size: 12pt;
-  width:40%;
-  text-overflow: ellipsis;
-  overflow:scroll;
+  font-size: 16px;
+  width:11em;;
+	line-height: 18px
+}
+
+.route {   			/* bus route */
+	display: flex;
+	width: 55%;
+	color: #00c6E1;
+	font-size: 12px;
+	padding-left: 4%;
+	font-family: "Helvetica Neue";
+
 }
 
 .time{              /* Arrival time */
   display: inline-flex;
   color: #979797;
   font-family: "Helvetica Neue";
-  font-size: 10pt;
+  font-size: 12px;
   width:40%;
   justify-content: flex-end;
   text-overflow: ellipsis;
@@ -169,14 +186,25 @@ ul li {
   }
 
 .border {      /* border line */
-  margin-left: 23%;
+  margin-left: 20%;
   border-bottom: 1px solid #979797;
   }
 
-.botbar{            /*bot grey bar*/
-  position:relative;
+.botBar{            /*bot grey bar*/
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	padding-left: 10%;
+	padding-right: 10%;
+	size: 5px;
+	position:relative;
   background-color: white;
   height: 64px;
   width: 100%;
   border-top: 2px solid #979797;
+}
+
+.alert {
+	size:
 }
