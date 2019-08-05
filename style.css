@@ -47,7 +47,7 @@ table {
 .phone-wrapper {      /*overall frame*/
   width: 375px;
   margin: 5% auto 0; /* Top is 5% - left and right are automatically adjusting to center */
-  height: 900px;
+  height: 805px;
   background-color: white;
 }
 
@@ -76,7 +76,7 @@ body {
 
 .chevron.left:before {
 	position: absolute;
-  margin-top: 2.2em;
+  margin-top: 2.3em;
   margin-left: .625em;
 	transform: rotate(-135deg);
   color: #ffffff;
@@ -86,16 +86,16 @@ body {
   position: absolute;
   padding-top: .85em;
   padding-left: 2em;
-  font-size: 14px;
+  font-size: 16px;
   font-family: "arial narrow";
   color: #ffffff;
 }
 
 .headline {       /* Washington and State*/
-  padding-top: 1.4em;
+  padding-top: 1.55em;
   font-style: normal;
   font-family: "Arial narrow";
-  font-size: 14px;
+  font-size: 16px;
   color: #ffffff;
   position:absolute;
   top: 50%;
@@ -127,7 +127,7 @@ ul li {
 .busNum {             /* oval # */
   position:relative;
   height: 2.18em;
-  width: 17%;
+  width: 20%;
   background-color: #979797;
   border-radius: 50%;
   justify-content: center;
@@ -170,41 +170,102 @@ ul li {
   color: #979797;
   font-family: "Helvetica Neue";
   font-size: 12px;
-  width:40%;
+  width:60%;
   justify-content: flex-end;
-  text-overflow: ellipsis;
-  overflow: scroll;
 }
 
 .chevron.right:before {        /* grey chevron */
 	transform: rotate(45deg);
   color: #979797;
   display:flex;
+	margin-right: 1em;
 }
 .right {
   width: 5%;
   }
 
 .border {      /* border line */
-  margin-left: 20%;
+  margin-left: 17%;
   border-bottom: 1px solid #979797;
   }
 
-.botBar{            /*bot grey bar*/
-	box-sizing: border-box;
+.botBar{            /*bot bar*/
 	display: flex;
+	box-sizing: border-box;
 	justify-content: space-between;
-	align-items: baseline;
-	padding-left: 10%;
-	padding-right: 10%;
-	size: 5px;
+	align-items: center;
 	position:relative;
   background-color: white;
   height: 64px;
-  width: 100%;
   border-top: 2px solid #979797;
+}
+.botbar1 {
+	box-sizing: border-box;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	padding-left: 10%;
+	padding-top: .35em
 }
 
 .alert {
-	size:
+	width: 50%;
+	display: flex;
+	text-align: center;
+}
+
+h2.alertt {
+	position: relative;
+	display:flex;
+	color: #979797;
+	align-items: center;
+	font-family: "Helvetica Neue";
+	font-size: 14px;
+	line-height: 1.75em;
+}
+
+.botbar2 {
+	box-sizing: border-box;
+	padding-left: 19%;
+	padding-bottom: .35em;
+}
+
+.bus {
+	width: 40%;
+	display: flex;
+	align-items: flex-start;
+}
+
+h2.buss {
+	position: relative;
+	display: flex;
+	color: #00C6E1;
+	align-items: center;
+	font-size: 14px;
+	text-align: center;
+	font-family: "Helvetica Neue";
+	padding-left: 5px;
+	line-height: .85em;
+}
+
+.botbar3 {
+	padding-right: 3%;
+	padding-top: .15em;
+}
+
+.house {
+	width: 30%;
+	align-items: center;
+	padding-left:2.5em;
+}
+
+h2.housee {
+	font-size: 14px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	line-height: 1.25em;
+	font-size: 14px;
+	font-family: "Helvetica Neue";
+	color: #979797;
 }
