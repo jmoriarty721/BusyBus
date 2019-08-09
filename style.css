@@ -44,10 +44,10 @@ table {
 
 /*reset end */
 
-.phone-wrapper {      /*overall frame*/
+main {      /*overall frame*/
   width: 375px;
   margin: 5% auto 0; /* Top is 5% - left and right are automatically adjusting to center */
-  height: 805px;
+  height: 950px;
   background-color: white;
 }
 
@@ -56,7 +56,7 @@ body {
 }
 
 
-.topbar{            /*blue bar*/
+header {            /*blue bar*/
   position:relative;
   height: 64px;
   width: 100%;
@@ -75,32 +75,33 @@ body {
 }
 
 .chevron.left:before {
-	position: absolute;
-  margin-top: 2.3em;
+	display: flex;
+	position: relative;
+  margin-top: 1em;
   margin-left: .625em;
 	transform: rotate(-135deg);
   color: #ffffff;
 }
 
 .search {            /*Search*/
-  position: absolute;
-  padding-top: .85em;
+  position: relative;
+	display: flex;
+  margin-top: -.75em;
   padding-left: 2em;
   font-size: 16px;
-  font-family: "arial narrow";
+  font-family: "Helvetica Neue";
   color: #ffffff;
 }
 
 .headline {       /* Washington and State*/
-  padding-top: 1.55em;
   font-style: normal;
-  font-family: "Arial narrow";
+  font-family: "Helvetica neue";
   font-size: 16px;
   color: #ffffff;
-  position:absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position:relative;
+	display: flex;
+	justify-content: center;
+	margin-top: -1em;
 }
 
 .map{               /* map */
@@ -127,7 +128,7 @@ ul li {
 .busNum {             /* oval # */
   position:relative;
   height: 2.18em;
-  width: 20%;
+  width: 35%;
   background-color: #979797;
   border-radius: 50%;
   justify-content: center;
@@ -137,14 +138,14 @@ ul li {
   font-size: 17px;
 }
 
-.div {								/* div for busname and route */
+.busid {								/* section for busname and route */
 	padding-left: 4%;
 	width:50%;
 	align-items: center;
 	box-sizing: border-box;
 }
 
-.busName {           /* Streets */
+.stopName {           /* Streets */
 	display: flex;
 	color: #979797;
   font-family: "Helvetica Neue";
@@ -165,31 +166,52 @@ ul li {
 
 }
 
-.time{              /* Arrival time */
-  display: inline-flex;
+.timeid {
+	width:100%;
+	box-sizing: border-box;
+	display:inline;
+}
+
+
+.arrival {					 /* Arrival time */
+	display: flex;
   color: #979797;
   font-family: "Helvetica Neue";
+	font-size: 14px;
+	justify-content: flex-end;
+	padding-right: .25em;
+
+}
+
+.time{              /* Arrival rate */
+  display: flex;
+  color: #00c6E1;
+  font-family: "Helvetica Neue";
   font-size: 12px;
-  width:60%;
-  justify-content: flex-end;
+  width:100%;
+	justify-content: flex-end;
+	padding-right: .5em;
+
 }
 
 .chevron.right:before {        /* grey chevron */
 	transform: rotate(45deg);
   color: #979797;
   display:flex;
-	margin-right: 1em;
 }
 .right {
   width: 5%;
+	margin-right: .25em;
+	margin-left: .25em;
   }
 
-.border {      /* border line */
+hr {      /* border line */
   margin-left: 17%;
   border-bottom: 1px solid #979797;
   }
 
-.botBar{            /*bot bar*/
+
+footer {								 /* bottom nav */
 	display: flex;
 	box-sizing: border-box;
 	justify-content: space-between;
@@ -199,6 +221,7 @@ ul li {
   height: 64px;
   border-top: 2px solid #979797;
 }
+
 .botbar1 {
 	box-sizing: border-box;
 	align-items: center;
