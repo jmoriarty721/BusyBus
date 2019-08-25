@@ -178,6 +178,7 @@ ul li {
   color: #979797;
   font-family: "Helvetica Neue";
 	font-size: 14px;
+	width: 100%;
 	justify-content: flex-end;
 	padding-right: .25em;
 
@@ -188,7 +189,7 @@ ul li {
   color: #00c6E1;
   font-family: "Helvetica Neue";
   font-size: 12px;
-	width: 103%;
+	width: 100%;
 	justify-content: flex-end;
 	padding-right: .5em;
 
