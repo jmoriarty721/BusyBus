@@ -3,6 +3,8 @@
 BusyBus was a project that sought to solve a public transit problem:
 "How can we determine when a bus is nearing the Washington and State stop?"
 
+![busybus app](https://github.com/jmoriarty721/BusyBus/blob/master/images/screenshot.png)
+
 The solution was a Transit App with live updates of approaching buses. 
-I went from research to visual design to coding out the HTML and CSS of the live tracker
+I went from research to visual design and then coded out the HTML and CSS.
 
